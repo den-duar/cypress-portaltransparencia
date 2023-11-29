@@ -1,4 +1,4 @@
-const el = require('./Elements').ELEMENTS
+const el = require('./elements').ELEMENTS
 
 class Despesas{
 
@@ -14,4 +14,4 @@ class Despesas{
 
 }
 
-export default new Despesas()
+export const despesasPage = new Despesas();
