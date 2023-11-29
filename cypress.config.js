@@ -6,6 +6,7 @@ module.exports = defineConfig({
     baseUrl: 'https://transparencia.joaopessoa.pb.gov.br/',
     specPattern: "**/*.feature",
     chromeWebSecurity: false,
+    supportFile: false,
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber());
     },

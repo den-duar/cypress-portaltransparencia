@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
 import { portalPage } from '../../pages/portal.page';
+import { painelCovidPage } from "../../pages/painelCovid.page";
 
 
 Given("que eu acesse a pagina inicial do portal", () => {
@@ -12,5 +13,5 @@ When("eu clicar no botao do covid", () => {
 })
 
 Then("deve ser exibida a pagina com informacoes do covid", () => {
-    portalPage.validarTelaCovid()
+    painelCovidPage.validarTelaPainelCovid()
 })
