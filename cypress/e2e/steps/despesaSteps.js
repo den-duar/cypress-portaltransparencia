@@ -8,8 +8,11 @@ Given("que eu acesse a pagina inicial do portal", () => {
     portalPage.acessarPortal();
 })
 
-When("eu clicar no icone Despesas", () => {
-    despesasPage.validarTelaDespesa();
+When("acessar a pagina de despesas do portal", () => {
+    despesasPage.validarTelaDespesas();
+})
+And("eu selecionar as opções dos filtros e eu clicar no botao pesquisar", () => {
+    despesasPage.validarInformacaoDespesas();
 })
 
 Then("deve ser exibida a pagina com informacoes das despesas", () => {
