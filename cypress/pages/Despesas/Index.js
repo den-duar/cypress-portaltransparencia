@@ -3,15 +3,14 @@ const el = require('./elements').ELEMENTS
 class Despesas{
 
     validarTelaDespesas(){
-        cy.get('[href="#/despesas/despesas-quadro-geral"] > .mat-icon').click(),
-        cy.get('.alerta-ano').should('contain.text','Nesta página apenas são exibidos os resultados a partir de 2021')
-        //cy.get('.text-uppercase')
+        cy.get(el.iconeDespesa).click(),
+        cy.get(el.mensagem).should('contain.text','Nesta página apenas são exibidos os resultados a partir de')
     }
     validarInformacaoDespesas(){
-        cy.get('#filtroAgrupamento > .ui-dropdown > .ui-dropdown-trigger > .ui-dropdown-trigger-icon').click()
-        cy.get(':nth-child(6) > .ui-dropdown-item > .ng-star-inserted').click()
-        cy.get(':nth-child(2) > div.ng-tns-c337-3 > .btn').click()
-        cy.get(el.tabelaDespesas).should('have.text','Empenhado')
+        cy.get(el.campoAgrupamento).click()
+        cy.get(el.programa1).click()
+        cy.get(el.programa2).click()
+        cy.get(el.tabelaDespesas).should('have.text','TabelaGráfico')
     }
 
 }

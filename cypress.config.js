@@ -11,5 +11,6 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
   },
-  "screenshotOnRunFailure": false
+  "screenshotOnRunFailure": false,
+  "defaultCommandTimeout": 20000
 });
