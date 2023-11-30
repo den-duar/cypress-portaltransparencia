@@ -1,4 +1,4 @@
-//Elementos da pagina de Login
+//Elementos da pagina de Despesas
 
 export const ELEMENTS ={
     iconeDespesa:'.componente-home.componente-cards > [href="#/despesas/despesas-quadro-geral"] > span',

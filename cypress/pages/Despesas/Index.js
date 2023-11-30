@@ -1,4 +1,4 @@
-const el = require('./elements').ELEMENTS
+const el = require('./Elements').ELEMENTS
 
 class Despesas{
 
@@ -12,7 +12,5 @@ class Despesas{
         cy.get(el.programa2).click()
         cy.get(el.tabelaDespesas).should('have.text','TabelaGráfico')
     }
-
 }
-
 export const despesasPage = new Despesas();
