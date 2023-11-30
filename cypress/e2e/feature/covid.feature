@@ -1,5 +1,5 @@
 #language: pt
-Funcionalidade: Acessar o portal da transparencia
+Funcionalidade: Acessar a pagina do covid
 
 Contexto:
     Dado que eu acesse a pagina inicial do portal

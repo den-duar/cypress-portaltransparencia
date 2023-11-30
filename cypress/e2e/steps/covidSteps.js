@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
 import { portalPage } from '../../pages/portal.page';
 import { painelCovidPage } from "../../pages/painelCovid.page";
 
