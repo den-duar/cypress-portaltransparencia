@@ -8,8 +8,9 @@ class Despesas{
         //cy.get('.text-uppercase')
     }
     validarInformacaoDespesas(){
-        cy.get('.ui-dropdown-label-container > .ng-tns-c192-5').select(6)
-        cy.get(el.botaoPesquisar).click()
+        cy.get('#filtroAgrupamento > .ui-dropdown > .ui-dropdown-trigger > .ui-dropdown-trigger-icon').click()
+        cy.get(':nth-child(6) > .ui-dropdown-item > .ng-star-inserted').click()
+        cy.get(':nth-child(2) > div.ng-tns-c337-3 > .btn').click()
         cy.get(el.tabelaDespesas).should('have.text','Empenhado')
     }
 
