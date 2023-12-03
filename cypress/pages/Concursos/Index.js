@@ -4,13 +4,14 @@ class Concursos{
 
     validarTelaConcursos(){
         cy.get(el.iconeConcurso).click(),
-        cy.get().should('contain.text','')
-    }
-    validarInformacaoConcursos(){
+        cy.get(el.texto).should('have.text',' Concursos  Página Inicial Concursos'),
         cy.get(el.dropdown).click()
         cy.get(el.opcaoStatus).click()
-        cy.get().click()
-        cy.get().should('have.text','')
+    }
+
+    validarInformacaoConcursos(){
+        cy.get(el.botaoPesquisar2).click()
+        cy.get(el.tabelaConcursos).should('have.text','Descrição')
     }
 }
 export const concursosPage = new Concursos();

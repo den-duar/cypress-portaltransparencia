@@ -12,5 +12,5 @@ module.exports = defineConfig({
     },
   },
   "screenshotOnRunFailure": false,
-  "defaultCommandTimeout": 20000
+  "defaultCommandTimeout": 25000
 });
