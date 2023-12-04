@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { When, Then } from "cypress-cucumber-preprocessor/steps";
 import {linkPage}from '../../pages/LinksUteis/Index';
 
 
