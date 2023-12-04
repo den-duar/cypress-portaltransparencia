@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 import { When, Then } from "cypress-cucumber-preprocessor/steps"
-
 import { painelCovidPage } from "../../pages/Covid/Index";
 
 When("eu clicar no botao do covid", () => {
