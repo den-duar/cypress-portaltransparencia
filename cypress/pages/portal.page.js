@@ -4,10 +4,6 @@ class PortalPage {
         cy.visit('/')
     }
 
-    clicarCovid() {
-        cy.get('[href="#/covid-vacinacao/vacinometro"] > .mat-icon').click()
-    }
-
 }
 
 

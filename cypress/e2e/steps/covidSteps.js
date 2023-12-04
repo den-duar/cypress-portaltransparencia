@@ -1,15 +1,10 @@
 /// <reference types="cypress" />
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
-import { portalPage } from '../../pages/portal.page';
-import { painelCovidPage } from "../../pages/painelCovid.page";
+import { When, Then } from "cypress-cucumber-preprocessor/steps"
 
-
-Given("que eu acesse a pagina inicial do portal", () => {
-    portalPage.acessarPortal();
-})
+import { painelCovidPage } from "../../pages/Covid/Index";
 
 When("eu clicar no botao do covid", () => {
-    portalPage.clicarCovid()
+    painelCovidPage.clicarCovid();
 })
 
 Then("deve ser exibida a pagina com informacoes do covid", () => {
